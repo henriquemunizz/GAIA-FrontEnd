@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/assistente.css">
+
+    <title>GAIA | Assistente</title>
+</head>
+<body>
+
+    <nav>
+        <a class="logo" href="../index.html">
+            GAIA
+        </a>
+
+        <ul class="nav-links">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+            <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li><a class="nav-link" href="integrantes.html">Integrantes</a></li>
+            <li><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li><a class="nav-link" href="contato.html">Contato</a></li>
+            <li><a class="nav-link nav-active" href="assistente.html">Assistente</a></li>
+            <li><a class="nav-link" href="loja.html">Loja</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Assistente GAIA</h1>
+        <p>A GAIA auxilia o usuário dentro da SoulUp e oferece pontos extras após missões concluídas.</p>
+    </header>
+
+    <main>
+        <section class="mission-section">
+            <article class="mission-card">
+                <h2>Auxílio ao usuário</h2>
+                <p>A GAIA responde dúvidas simples e ajuda o usuário a entender melhor a plataforma.</p>
+                <p class="mission-points">Assistência</p>
+            </article>
+
+            <article class="mission-card">
+                <h2>Pontos extras</h2>
+                <p>Ao concluir uma missão já existente na SoulUp, o usuário pode ganhar pontos extras.</p>
+                <p class="mission-points">Bônus</p>
+            </article>
+
+            <article class="mission-card">
+                <h2>Personalização</h2>
+                <p>Os pontos extras podem ser usados para comprar acessórios e personalizar a GAIA.</p>
+                <p class="mission-points">Loja</p>
+            </article>
+        </section>
+
+        <section class="tool-container">
+            <div class="tool-container-title">
+                <h2>Registrar conclusão de missão</h2>
+                <p>Simule o recebimento de pontos extras após completar uma missão da SoulUp.</p>
+            </div>
+
+            <form class="mission-form" onsubmit="calculateMission(event)">
+                <div class="form-group">
+                    <label class="form-label">Missão concluída</label>
+
+                    <select class="form-input" id="mission">
+                        <option value="">Selecione uma opção</option>
+                        <option value="30">Missão simples concluída</option>
+                        <option value="50">Missão média concluída</option>
+                        <option value="80">Missão especial concluída</option>
+                    </select>
+                </div>
+
+                <button class="action-btn" type="submit">Receber pontos extras</button>
+            </form>
+
+            <div class="result-box" id="mission-result">
+                <p id="mission-message">Os pontos extras aparecerão aqui.</p>
+                <h3 id="mission-points">0 pontos extras</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 GAIA | Challenge SoulUp - FIAP</p>
+    </footer>
+
+    <script src="../js/script.js"></script> 
+</body>
+</html> 
