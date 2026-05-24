@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/loja.css">
+
+    <title>GAIA | Loja</title>
+</head>
+<body>
+
+    <nav>
+        <a class="logo" href="../index.html">
+            GAIA
+        </a>
+
+        <ul class="nav-links">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+            <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li><a class="nav-link" href="integrantes.html">Integrantes</a></li>
+            <li><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li><a class="nav-link" href="contato.html">Contato</a></li>
+            <li><a class="nav-link" href="assistente.html">Assistente</a></li>
+            <li><a class="nav-link nav-active" href="loja.html">Loja</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Loja de Acessórios</h1>
+        <p>Use os pontos extras para personalizar a GAIA com acessórios especiais.</p>
+    </header>
+
+    <main>
+        <section class="shop-section">
+            <article class="shop-card">
+                <h2>Boné verde</h2>
+                <p>Acessório simples para personalizar o avatar.</p>
+                <p class="item-price">80 pontos</p>
+            </article>
+
+            <article class="shop-card">
+                <h2>Mochila sustentável</h2>
+                <p>Item visual para representar hábitos conscientes.</p>
+                <p class="item-price">120 pontos</p>
+            </article>
+
+            <article class="shop-card">
+                <h2>Óculos futurista</h2>
+                <p>Acessório especial para deixar o avatar mais moderno.</p>
+                <p class="item-price">150 pontos</p>
+            </article>
+        </section>
+
+        <section class="tool-container">
+            <div class="tool-container-title">
+                <h2>Comprar acessório</h2>
+                <p>Informe seus pontos extras e escolha um item da loja.</p>
+            </div>
+
+            <form class="shop-form" onsubmit="buyItem(event)">
+                <div class="form-group">
+                    <label class="form-label">Seus pontos extras</label>
+                    <input class="form-input" id="points" type="number" placeholder="Digite seus pontos">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Acessório</label>
+
+                    <select class="form-input" id="item">
+                        <option value="">Selecione um item</option>
+                        <option value="80">Boné verde</option>
+                        <option value="120">Mochila sustentável</option>
+                        <option value="150">Óculos futurista</option>
+                    </select>
+                </div>
+
+                <button class="action-btn" type="submit">Comprar</button>
+            </form>
+
+            <div class="result-box" id="shop-result">
+                <p id="shop-message">O resultado da compra aparecerá aqui.</p>
+                <h3 id="shop-points">Pontos restantes: 0</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 GAIA | Challenge SoulUp - FIAP</p>
+    </footer>
+
+    <script src="../js/script.js"></script> 
+</body>
+</html>
