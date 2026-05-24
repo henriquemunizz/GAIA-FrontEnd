@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #18aaa8;
+    --primary-dark: #0b8f91;
+    --primary-light: #53d3cc;
+    --secondary-color: #2d3436;
+    --background-color: #eefafa;
+    --card-color: #ffffff;
+    --text-color: #333333;
+    --muted-color: #636e72;
+    --border-color: #dfe6e9;
+    --white-color: #ffffff;
+
+    --result-box: #e8f8f5;
+    --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-light));
+    padding: 0 8%;
+    height: 10vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    font-size: 2rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid var(--white-color);
+}
+
+.nav-active {
+    border-bottom: 3px solid var(--white-color);
+}
+
+.page-header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-light));
+    color: var(--white-color);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.page-header p {
+    margin-top: 0.5rem;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.mission-section {
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+.mission-card {
+    background-color: var(--card-color);
+    color: var(--text-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    width: 16rem;
+}
+
+.mission-card:hover {
+    border: 2px solid var(--primary-color);
+}
+
+.mission-card h2 {
+    color: var(--primary-dark);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.mission-card p {
+    color: var(--muted-color);
+    margin-bottom: 0.8rem;
+}
+
+.mission-points {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--primary-dark);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
