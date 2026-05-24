@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #18aaa8;
+    --primary-dark: #0b8f91;
+    --primary-light: #53d3cc;
+    --secondary-color: #2d3436;
+    --background-color: #eefafa;
+    --card-color: #ffffff;
+    --text-color: #333333;
+    --muted-color: #636e72;
+    --border-color: #dfe6e9;
+    --white-color: #ffffff;
+
+    --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
