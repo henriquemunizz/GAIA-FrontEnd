@@ -55,11 +55,44 @@
                 <p class="item-price">150 pontos</p>
             </article>
         </section>
+
+        <section class="tool-container">
+            <div class="tool-container-title">
+                <h2>Comprar acessório</h2>
+                <p>Informe seus pontos extras e escolha um item da loja.</p>
+            </div>
+
+            <form class="shop-form" onsubmit="buyItem(event)">
+                <div class="form-group">
+                    <label class="form-label">Seus pontos extras</label>
+                    <input class="form-input" id="points" type="number" placeholder="Digite seus pontos">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Acessório</label>
+
+                    <select class="form-input" id="item">
+                        <option value="">Selecione um item</option>
+                        <option value="80">Boné verde</option>
+                        <option value="120">Mochila sustentável</option>
+                        <option value="150">Óculos futurista</option>
+                    </select>
+                </div>
+
+                <button class="action-btn" type="submit">Comprar</button>
+            </form>
+
+            <div class="result-box" id="shop-result">
+                <p id="shop-message">O resultado da compra aparecerá aqui.</p>
+                <h3 id="shop-points">Pontos restantes: 0</h3>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>© 2026 GAIA | Challenge SoulUp - FIAP</p>
     </footer>
 
+    <script src="../js/script.js"></script> 
 </body>
 </html>
